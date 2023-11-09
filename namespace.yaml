@@ -3,7 +3,23 @@ kind: Namespace
 metadata:
   labels:
     argocd.argoproj.io/managed-by: openshift-gitops
-  name: openshift-devspaces
+    cog.opsgroup: team_platform
+    app.kubernetes.io/part-of: keda-operator
+    app.kubernetes.io/instance: cog-namespace-management-platform-prod
+    kubernetes.io/metadata.name: openshift-keda
+    app.kubernetes.io/created-by: namespace-management
+    app.kubernetes.io/version: 2.10.1
+    security.openshift.io/scc.podSecurityLabelSync: 'true'
+    cog.environment.category: platform_prod
+    pod-security.kubernetes.io/warn: baseline
+    olm.operatorgroup.uid/1a91f862-ba57-426b-a244-08466e039166: ''
+    cog.environment.classification: prod
+    pod-security.kubernetes.io/audit: baseline
+    pod-security.kubernetes.io/warn-version: v1.24
+    app.kubernetes.io/name: openshift-keda
+    pod-security.kubernetes.io/audit-version: v1.24
+    dcs.itsmoplosgroep: IVA09000
+  name: testpawan
 spec:
   finalizers:
   - kubernetes
