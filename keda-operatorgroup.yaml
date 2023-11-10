@@ -3,8 +3,7 @@ kind: OperatorGroup
 metadata:
   annotations:
     olm.providedAPIs: ClusterTriggerAuthentication.v1alpha1.keda.sh,KedaController.v1alpha1.keda.sh,ScaledJob.v1alpha1.keda.sh,ScaledObject.v1alpha1.keda.sh,TriggerAuthentication.v1alpha1.keda.sh
-  generateName: openshift-keda-
-  namespace: openshift-keda
+  namespace: testpawan
 spec:
   targetNamespaces:
   - testpawan
